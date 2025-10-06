@@ -50,7 +50,7 @@ namespace minimal_api.Migrations
                         new
                         {
                             Id = 1,
-                            Email = "administrador",
+                            Email = "administrador@teste.com",
                             Perfil = "Adm",
                             Senha = "123456"
                         });

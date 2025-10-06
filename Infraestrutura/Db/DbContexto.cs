@@ -15,6 +15,8 @@ public class DbContexto : DbContext
 
     public DbSet<Administrador> Administradores { get; set; } = default!;
 
+    public DbSet<Veiculo> Veiculos { get; set; } = default!;
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Administrador>().HasData
@@ -22,7 +24,7 @@ public class DbContexto : DbContext
             new Administrador
             {
                 Id = 1,
-                Email = "administrador",
+                Email = "administrador@teste.com",
                 Senha = "123456",
                 Perfil = "Adm"
             }
